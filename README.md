@@ -91,7 +91,7 @@
 
 ## 🖼 Wireframe
 
-![Wireframe](.little-lemon-wireframe.png)
+![Wireframe](little-lemon-wireframe.png)
 
 ## 🧪 Notes
 
