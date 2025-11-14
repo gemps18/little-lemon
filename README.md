@@ -1,50 +1,106 @@
-# Welcome to your Expo app 👋
+# 📱 Little Lemon — React Native Capstone App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+- A fully functional mobile app built using React Native, Expo, and SQLite as part of the Meta React Native Specialization.
+- The app simulates a restaurant ordering experience with onboarding, profile management, filtering, searching, and local data persistence.
 
-## Get started
+## 🚀 Features
+### 👋 Onboarding Flow
 
+- First-time users complete a profile form
+
+- Data is saved locally via AsyncStorage
+
+- Returning users skip onboarding automatically
+
+### 🏠 Home Screen
+
+- Displays restaurant hero section
+
+- Dynamic category filters (Starters, Mains, Desserts)
+
+- Search bar with debounced search
+
+- Menu data loaded from remote JSON, stored in SQLite, and displayed offline
+
+- Local images for all dishes for fast and consistent rendering
+
+### 👤 Profile Management
+
+- View and edit saved profile info
+
+- Upload/replace profile avatar
+
+- Toggle preferences (newsletter, notifications, etc.)
+
+- Data saved locally with AsyncStorage
+
+- Logout resets the onboarding state
+
+### 📦 Local Data Storage
+
+- SQLite table initialized on first launch
+
+- Menu items fetched once from API → stored in database
+
+- Filtering and searching performed directly on local DB (offline-friendly)
+
+### 🎨 Custom Styling & Fonts
+
+- Uses Karla & MarkaziText fonts
+
+- Clean, modern UI
+
+- Consistent color scheme from Meta course specification
+
+## 🛠 Tech Stack
+
+- React Native
+
+- Expo
+
+- React Navigation
+
+- SQLite (expo-sqlite)
+
+- AsyncStorage
+
+- Lodash (debounce)
+
+- React Native Paper
+
+- Custom Fonts via Expo
+
+## ▶️ Getting Started
 1. Install dependencies
+- npm install
 
-   ```bash
-   npm install
-   ```
+2. Start the Expo development server
+- npx expo start
 
-2. Start the app
+3. Open the app
 
-   ```bash
-   npx expo start
-   ```
+- You can open it using any of the following:
 
-In the output, you'll find options to open the app in a
+- Expo Go (Android/iOS physical devices)
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+- iOS Simulator (macOS only)
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+- Android Emulator
 
-## Get a fresh project
+- Expo Development Build (recommended for full SQLite support)
 
-When you're ready, run:
+## 🖼 Wireframe
 
-```bash
-npm run reset-project
-```
+![Wireframe](.little-lemon-wireframe.png)
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## 🧪 Notes
 
-## Learn more
+- If you use Expo Go, SQLite requires the newer openDatabaseSync() API.
 
-To learn more about developing your project with Expo, look at the following resources:
+- Local images are used instead of remote URLs to prevent loading failures.
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+- Menu items are fetched once and stored in SQLite for offline performance.
 
-## Join the community
+## Author
 
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+- LinkedIn - [@gemps18] (https://www.linkedin.com/in/gemps18/)

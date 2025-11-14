@@ -2,9 +2,10 @@
   "expo": {
     "name": "little-lemon",
     "slug": "little-lemon",
+    "owner": "gemps18",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
+    "icon": "./assets/icon.png",
     "scheme": "littlelemon",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
@@ -38,7 +39,8 @@
             "backgroundColor": "#000000"
           }
         }
-      ]
+      ],
+      "expo-sqlite"
     ],
     "experiments": {
       "typedRoutes": true,
